@@ -1,4 +1,4 @@
-## Firewalling Pterodactyl
+## Firewalling Pterodactyl (or any other project that uses docker)
 Modify the UFW configuration file `/etc/ufw/after.rules` and add the following rules at the end of the file:
 ```
 # BEGIN UFW AND DOCKER
