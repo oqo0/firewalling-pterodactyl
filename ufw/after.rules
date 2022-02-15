@@ -29,7 +29,7 @@
 # don't delete the 'COMMIT' line or these rules won't be processed
 COMMIT
 
-# BEGIN UFW AND DOCKER
+# --- DOCKER ---
 *filter
 :ufw-user-forward - [0:0]
 :ufw-docker-logging-deny - [0:0]
@@ -55,4 +55,3 @@ COMMIT
 -A ufw-docker-logging-deny -j DROP
 
 COMMIT
-# END UFW AND DOCKER
