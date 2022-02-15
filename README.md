@@ -1,7 +1,7 @@
 ## Firewalling Pterodactyl (or any other project that uses docker)
 Modify the UFW configuration file `/etc/ufw/after.rules` and add the following rules at the end of the file:
 ```
-# BEGIN UFW AND DOCKER
+# --- DOCKER ---
 *filter
 :ufw-user-forward - [0:0]
 :ufw-docker-logging-deny - [0:0]
