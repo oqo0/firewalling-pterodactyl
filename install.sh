@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# current script path
+SCRIPT_PATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+COPY_FROM="${SCRIPT_PATH}/ufw/after.rules"
+COPY_TO="/etc/ufw/after.rules"
+
+# recursively copy files
+cp -R "${COPY_FROM}" "${COPY_TO}"
+
+echo "after.rules have been successfully installed"
