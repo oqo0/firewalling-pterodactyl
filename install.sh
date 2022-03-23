@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# current script path
 SCRIPT_PATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 COPY_FROM="${SCRIPT_PATH}/ufw/after.rules"
