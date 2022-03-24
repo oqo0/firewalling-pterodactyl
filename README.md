@@ -43,15 +43,15 @@ ufw route allow proto tcp from 172.17.0.2 to any port 20010
 ```
 
 #### Installation using script
-Clone this repo:  
+Clone this repo  
 ```
 git clone https://github.com/oqo0/firewalling-pterodactyl.git
 ```  
-Make an executable script:  
+Make an executable script  
 ```
 chmod u+x install.sh
 ```  
-Run the script:  
+Run the script  
 ```
 sudo ./install.sh
 ```  
