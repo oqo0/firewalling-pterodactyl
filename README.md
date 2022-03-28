@@ -1,5 +1,5 @@
 ## Firewalling Pterodactyl (or any other project that uses docker)
-#### Manual installation (recommended)
+### Manual installation (recommended)
 Modify the UFW configuration file `/etc/ufw/after.rules` and add the following rules at the end of the file:
 ```
 # --- DOCKER ---
@@ -42,7 +42,7 @@ ufw route allow proto tcp from any to any port 20010
 ufw route allow proto tcp from 172.17.0.2 to any port 20010
 ```
 
-#### Installation using script
+### Installation using script
 Clone this repo  
 ```
 git clone https://github.com/oqo0/firewalling-pterodactyl.git
