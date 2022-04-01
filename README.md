@@ -27,7 +27,6 @@ Modify the UFW configuration file `/etc/ufw/after.rules` and add the following r
 -A ufw-docker-logging-deny -m limit --limit 3/min --limit-burst 10 -j LOG --log-prefix "[UFW DOCKER BLOCK] "
 -A ufw-docker-logging-deny -j DROP
 
-# don't delete the 'COMMIT' line or these rules won't be processed
 COMMIT
 ```
 Restart UFW (warning: after restart public networks can't access any published docker ports)
