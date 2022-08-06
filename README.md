@@ -54,3 +54,4 @@ Run the script
 ```
 sudo ./install.sh
 ```  
+Script creates a backup copy at `/etc/ufw/after.rules.copy`.
